@@ -22,6 +22,7 @@ import WidgetPage from 'pages/WidgetPage';
 import React from 'react';
 import componentQueries from 'react-component-queries';
 import { BrowserRouter, Redirect, Switch } from 'react-router-dom';
+import ListPage from 'pages/ListPage'
 import './styles/reduction.scss';
 
 const getBasename = () => {
@@ -70,9 +71,9 @@ class App extends React.Component {
             />
             <LayoutRoute
               exact
-              path="/cards"
+              path="/list"
               layout={MainLayout}
-              component={CardPage}
+              component={ListPage}
             />
             <LayoutRoute
               exact

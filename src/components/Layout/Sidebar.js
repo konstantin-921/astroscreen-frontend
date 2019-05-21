@@ -81,8 +81,8 @@ const pageContents = [
 ];
 
 const navItems = [
-  { to: '/', name: 'dashboard', exact: true, Icon: MdDashboard },
-  { to: '/cards', name: 'cards', exact: false, Icon: MdWeb },
+  { to: '/', name: 'search', exact: true, Icon: MdDashboard },
+  { to: '/list', name: 'list', exact: false, Icon: MdWeb },
   { to: '/charts', name: 'charts', exact: false, Icon: MdInsertChart },
   { to: '/widgets', name: 'widgets', exact: false, Icon: MdWidgets },
 ];
@@ -112,18 +112,9 @@ class Sidebar extends React.Component {
         <div className={bem.e('background')} style={sidebarBackground} />
         <div className={bem.e('content')}>
           <Navbar>
-            <SourceLink className="navbar-brand d-flex">
-              <img
-                src={logo200Image}
-                width="40"
-                height="30"
-                className="pr-2"
-                alt=""
-              />
               <span className="text-white">
-                Reduction <FaGithub />
+                Astroscreen
               </span>
-            </SourceLink>
           </Navbar>
           <Nav vertical>
             {navItems.map(({ to, name, exact, Icon }, index) => (

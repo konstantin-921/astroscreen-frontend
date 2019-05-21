@@ -8,6 +8,15 @@
 
   &__input {
     /* stylelint-disable-next-line */
-    padding-left: 35px !important;
+    // padding-left: 35px !important;
+    min-width: 400px;
+  }
+
+  &__button-send {
+    margin-left: 5px;
+  }
+
+  &__button-send:focus {
+    box-shadow: none !important;
   }
 }

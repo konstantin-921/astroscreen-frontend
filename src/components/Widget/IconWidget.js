@@ -24,7 +24,7 @@ const IconWidget = ({
       </CardBody>
       <CardBody>
         <CardTitle>{title}</CardTitle>
-        <CardSubtitle>{subtitle}</CardSubtitle>
+        <CardSubtitle className="cr-widget__subtitle">{subtitle}</CardSubtitle>
       </CardBody>
     </Card>
   );
