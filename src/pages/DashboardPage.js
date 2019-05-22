@@ -1,16 +1,7 @@
 import Page from 'components/Page'
 import SearchInput from 'components/SearchInput'
-import { IconWidget, NumberWidget } from 'components/Widget'
+import { NumberWidget } from 'components/Widget'
 import { withRouter } from "react-router"
-import { getStackLineChart, stackLineChartOptions } from 'demos/chartjs'
-import {
-  avatarsData,
-  chartjs,
-  productsData,
-  supportTicketsData,
-  todosData,
-  userProgressTableData,
-} from 'demos/dashboardPage'
 import React from 'react'
 import { Bar, Line } from 'react-chartjs-2'
 import {
@@ -24,14 +15,7 @@ import {
   MdThumbUp,
 } from 'react-icons/md'
 import {
-  Badge,
   Button,
-  Card,
-  CardBody,
-  CardDeck,
-  CardGroup,
-  CardHeader,
-  CardTitle,
   Col,
   ListGroup,
   ListGroupItem,
@@ -39,7 +23,6 @@ import {
   Alert,
   NavLink
 } from 'reactstrap'
-import { getColor } from 'utils/colors'
 import ContainerWidget from '../components/ContainerWidgets'
 import api from '../utils/api'
 import config from '../config'

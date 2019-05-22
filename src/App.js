@@ -1,4 +1,3 @@
-import GAListener from 'components/GAListener';
 import { EmptyLayout, LayoutRoute, MainLayout } from 'components/Layout';
 import AlertPage from 'pages/AlertPage';
 // pages
@@ -18,7 +17,6 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter basename={getBasename()}>
-        <GAListener>
           <Switch>
             <LayoutRoute
               exact
@@ -40,7 +38,6 @@ class App extends React.Component {
             />
             <Redirect to="/" />
           </Switch>
-        </GAListener>
       </BrowserRouter>
     );
   }
