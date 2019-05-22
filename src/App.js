@@ -1,5 +1,4 @@
-import { EmptyLayout, LayoutRoute, MainLayout } from 'components/Layout';
-import AlertPage from 'pages/AlertPage';
+import { LayoutRoute, MainLayout } from 'components/Layout';
 // pages
 import React from 'react';
 import componentQueries from 'react-component-queries';
