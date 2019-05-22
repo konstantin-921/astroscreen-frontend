@@ -57,6 +57,11 @@ class ListPage extends React.Component {
     if(loading === true) { return null }
     return (
       <React.Fragment>
+        <Page
+          className="ListPage"
+          title="List"
+          breadcrumbs={[{ name: 'List', active: true }]}
+        >
         <div style={{ marginBottom: '15px' }}>
           {this.state.data
             .map((elem, i) => 
@@ -96,7 +101,7 @@ class ListPage extends React.Component {
           </PaginationItem>
 
         </Pagination>
-
+        </Page>
       </React.Fragment>
     );
   }
