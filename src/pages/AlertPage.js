@@ -13,6 +13,8 @@ import {
   UncontrolledAlert,
 } from 'reactstrap';
 
+
+
 const AlertPage = () => {
   return (
     <Page title="Alerts" breadcrumbs={[{ name: 'alerts', active: true }]}>

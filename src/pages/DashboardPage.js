@@ -1,11 +1,5 @@
-import { AnnouncementCard, TodosCard } from 'components/Card'
-import HorizontalAvatarList from 'components/HorizontalAvatarList'
-import MapWithBubbles from 'components/MapWithBubbles'
 import Page from 'components/Page'
 import SearchInput from 'components/SearchInput'
-import ProductMedia from 'components/ProductMedia'
-import SupportTicket from 'components/SupportTicket'
-import UserProgressTable from 'components/UserProgressTable'
 import { IconWidget, NumberWidget } from 'components/Widget'
 import { withRouter } from "react-router"
 import { getStackLineChart, stackLineChartOptions } from 'demos/chartjs'
