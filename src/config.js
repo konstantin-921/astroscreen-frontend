@@ -1,5 +1,5 @@
 const config = {
-  BASE_URL: 'http://localhost:3000/',
+  BASE_URL: 'https://scrapy-youtube.herokuapp.com/',
 };
 
 export default config

@@ -23,6 +23,7 @@ import React from 'react';
 import componentQueries from 'react-component-queries';
 import { BrowserRouter, Redirect, Switch } from 'react-router-dom';
 import ListPage from 'pages/ListPage'
+import DetailsPage from 'pages/DetailsPage'
 import './styles/reduction.scss';
 
 const getBasename = () => {
@@ -74,6 +75,12 @@ class App extends React.Component {
               path="/list"
               layout={MainLayout}
               component={ListPage}
+            />
+            <LayoutRoute
+              exact
+              path="/details"
+              layout={MainLayout}
+              component={DetailsPage}
             />
             <LayoutRoute
               exact

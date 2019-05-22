@@ -8,7 +8,8 @@ import {
   MdLink,
   MdInsertInvitation,
   MdVisibility,
-  MdTurnedIn
+  MdTurnedIn,
+  MdAccessTime
 } from 'react-icons/md';
 
 class ContainerWidget extends Component {
@@ -17,7 +18,7 @@ class ContainerWidget extends Component {
   }
 
   render() {
-    const { name, likes, dislikes, views, subscribers, url } = this.props.data
+    const { name, likes, dislikes, views, subscribers, published, url } = this.props.data
     return (
       <React.Fragment>
         <Row style={{ marginTop: 10 }} >
@@ -50,9 +51,9 @@ class ContainerWidget extends Component {
             <Col xs={4}>
               <IconWidget
                 bgColor='danger'
-                icon={MdLink}
-                title='Link'
-                subtitle={url}
+                icon={MdAccessTime}
+                title='Date'
+                subtitle={published}
               />
             </Col>
             <Col xs={4}>
