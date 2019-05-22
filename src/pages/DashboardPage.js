@@ -1,28 +1,8 @@
 import Page from 'components/Page'
 import SearchInput from 'components/SearchInput'
-import { NumberWidget } from 'components/Widget'
 import { withRouter } from "react-router"
 import React from 'react'
-import { Bar, Line } from 'react-chartjs-2'
-import {
-  MdBubbleChart,
-  MdInsertChart,
-  MdPersonPin,
-  MdPieChart,
-  MdRateReview,
-  MdShare,
-  MdShowChart,
-  MdThumbUp,
-} from 'react-icons/md'
-import {
-  Button,
-  Col,
-  ListGroup,
-  ListGroupItem,
-  Row,
-  Alert,
-  NavLink
-} from 'reactstrap'
+import { Button, Alert } from 'reactstrap'
 import ContainerWidget from '../components/ContainerWidgets'
 import api from '../utils/api'
 import config from '../config'

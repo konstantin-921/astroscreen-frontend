@@ -1,7 +1,7 @@
 import Page from 'components/Page'
 import React from 'react';
 import { withRouter } from "react-router"
-import { Button, Col, Row, Pagination, PaginationItem, PaginationLink, NavLink } from 'reactstrap'
+import { Col, Row, Pagination, PaginationItem, PaginationLink } from 'reactstrap'
 import { MdLiveTv } from 'react-icons/md'
 import { IconWidget } from '../components/Widget/index'
 import api from '../utils/api'
@@ -53,7 +53,7 @@ class ListPage extends React.Component {
   }
 
   render() {
-    const { data, loading, currentPage } = this.state
+    const { loading, currentPage } = this.state
     if(loading === true) { return null }
     return (
       <React.Fragment>

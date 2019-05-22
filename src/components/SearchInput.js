@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import { MdSearch } from 'react-icons/md'
-import { Form, FormGroup, Input, Button } from 'reactstrap'
-import api from '../utils/api'
-import config from '../config'
+import { Form, Input, Button } from 'reactstrap'
 
 class SearchInput extends Component {
   constructor(props) {

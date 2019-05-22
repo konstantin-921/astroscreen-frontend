@@ -1,6 +1,5 @@
 import sidebarBgImage from 'assets/img/sidebar/sidebar-4.jpg';
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
 import { MdDashboard, MdWeb } from 'react-icons/md';
 import { NavLink } from 'react-router-dom';
 import {
